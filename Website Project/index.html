@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Group 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ✅ NAVIGATION BAR -->
+<header class="navbar">
+    <div class="nav-container">
+        <img src="images/g3Logo.png" class="nav-logo-img">
+        <h1 class="nav-logo">Movie Review</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#synopsis">Synopsis</a></li> 
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#references">References</a></li> 
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+
+<!-- ✅ HERO SECTION WITH BACKGROUND -->
+<section id="hero" class="hero scroll-effect">
+    <div class="hero-content">
+        <div class="video-title">
+        <button class="play-btn" data-video="https://youtu.be/x8E8Ryx49so?si=bjsFflcgdkQ5vyqP"></button>
+        </div>
+
+        <!-- Modal -->
+        <div id="video-modal" class="video-modal">
+        <div class="video-modal-content">
+            <span class="close-btn">&times;</span>
+            <iframe id="video-frame" width="1000" height="720" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+        <h1 class="movie-title">Iron Lung</h1>
+        <p class="movie-subtitle">American independent science fiction horror<br>2026 • Movie • 2h 7m</p>
+        <a href="#synopsis" class="hero-btn">Explore</a>
+    </div>
+</section>
+
+
+
+<main class="two-column-container scroll-effect">
+
+    <!-- ✅ LEFT BOX -->
+    <section class="left-box">
+        <h2>🎬 Featured Film: Iron Lung</h2>
+
+        <div class="feature-info">
+            <p><strong>Directed by:</strong> Mark Fischbach</p>
+            <p><strong>Written by:</strong> Mark Fischbach</p>
+            <p><strong>Produced by:</strong> Mark Fischbach, Will Hyde, and Jeff Guerrero</p>
+            <p><strong>Starring:</strong> Mark Fischbach, Caroline Kaplan, and Troy Baker</p>
+            <p><strong>Cinematography:</strong> Philip Roy</p>
+            <p><strong>Edited by:</strong> Mark Fischbach</p>
+            <div class="more-info hidden">
+                <p><strong>Music by:</strong> Andrew Hulshult</p>
+                <p><strong>Production Company:</strong> Markiplier Studios and Iron Lung Productions</p>
+                <p><strong>Distributed by:</strong> Mark "Markiplier" Fischbach</p>
+                <p><strong>Release Date:</strong> January 30, 2026</p>
+                <p><strong>Running Time:</strong> 125 minutes</p>
+                <p><strong>Country:</strong> American</p>
+                <p><strong>Language:</strong> American</p>
+            </div>
+
+            <button class="btn toggle-btn">Show More</button>
+        </div>
+    </section>
+
+    <!-- ✅ SYNOPSIS (RIGHT SIDE) -->
+    <section id="synopsis" class="synopsis-section">
+        <h2>Synopsis</h2>
+            <img src="images/ironlungposter.jpg" alt="Iron Lung Poster" class="feature-poster">
+
+        <p>
+            The Iron Lung movie is a science-fiction, cosmic-horror film written, directed, and starring YouTuber Mark Fischbach (Markiplier). Based on the 2022 indie video game by David Szymanski, the plot follows a convicted criminal who is welded inside a claustrophobic submarine and forced to pilot it through an alien ocean of blood on a desolate moon.
+        </p>
+    </section>
+
+</main>
+
+
+<!-- ✅ MOVIE SUMMARY -->
+
+
+<section id="summary" class="summary-section scroll-effect">
+    <h2>Movie Summary</h2>
+    <p>
+        In the film Iron Lung, humanity is struggling to survive after a mysterious event called the Quiet Rapture causes all stars and habitable planets to disappear. A prisoner named Simon is sent on a dangerous mission in a small submarine called the Iron Lung to explore a moon covered by an ocean of blood in exchange for freedom. As he ventures deeper, he discovers evidence of previous failed expeditions and realizes a terrifying creature lurks beneath the surface. The mission turns into a fight for survival, ending in a tragic confrontation that reveals more about the horrors hidden within the blood ocean.
+    </p>
+</section>
+
+
+<!-- ✅ NOTABLE QUOTES -->
+<section class="quotes-section">
+  <h2>Notable Quotes</h2>
+
+  <!-- Quote 1 -->
+  <div class="quote-box scroll-effect">
+    <a href="https://en.wikipedia.org/wiki/Nora_Aunor" target="_blank">
+      <img src="images/Simon1.webp" class="actor-img" alt="Simon">
+    </a>
+    <div>
+      <p class="quote">
+        "I just want to live. Is that so wrong?"
+      </p>
+      <p class="actor-name">– Markiplier as Simon</p>
+    </div>
+  </div>
+
+  <!-- Quote 2 -->
+  <div class="quote-box scroll-effect">
+    <a href="https://en.wikipedia.org/wiki/Vilma_Santos" target="_blank">
+      <img src="images/Simon2.webp" class="actor-img" alt="Simon">
+    </a>
+    <div>
+      <p class="quote">
+        "You sent me down here to die and you don't even know my name?"
+      </p>
+      <p class="actor-name">– Markiplier as Simon</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ✅SCROLLABLE REVIEWS -->
+
+
+<section id="reviews" class="reviews-grid scroll-effect">
+    <h2 class="reviews-title">Reviews</h2>
+    <div class="review-card">
+     <a class="review-header" onclick="openProfile('member1')">
+        <img src="images/member1.jpg" class="review-profile">    
+        <h3>Charlis</h3>
+     </a>
+        <p class="review-summary">"Iron Lung" is a movie that i personally like because the actor is one of my favorite youtuber.</p>
+        <p class="review-full hidden">It was a great movie to watch, i enjoyed it a lot. The movie was so great that I can't believe I watched it again and again. The actors made it so good that i got curious on what's about to happen to next.</p>
+        <p class="review-full hidden">Iron Lung is a tense and unsettling horror film that keeps viewers on edge with its claustrophobic atmosphere. The movie does an excellent job of building suspense through limited space and constant uncertainty. Its dark visuals and eerie sound design create a feeling of dread that lingers throughout the story. While the pacing may feel slow at times, it helps strengthen the sense of isolation and fear. Overall, Iron Lung is a gripping horror experience that will appeal to fans of psychological and atmospheric scares.</p>
+
+        <button class="btn toggle-btn">Read More</button>
+        <div class="review-actions">
+            <button class="react-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3
+                        7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 
+                        19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span class="react-count">0</span>
+            </button>
+
+            <button class="share-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77l-7.13-4.2a3.471 3.471 0 000-1.3l7.1-4.18c.53.5
+                        1.23.82 2.01.82 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .2.03.39.08.57L8.91 8.65a3
+                        3 0 100 6.7l7.12 4.19c-.05.17-.08.36-.08.55 0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3z"/>
+            </svg>
+            <span class="share-count">0</span>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="review-card">
+      <a class="review-header" onclick="openProfile('member2')">
+        <img src="images/member2.jpg" class="review-profile">    
+        <h3>Wayneee</h3>
+      </a>  
+        <p class="review-summary">I didn’t expect the movie to be this exciting and full of heavy issues.</p>
+        <p class="review-full hidden">I played the Iron Lung game from 2022, so when I found out there was a movie adaptation, I had to watch it. All I can say is that it's a decent movie, and it includes many details from the game. The characters fit the atmosphere and style of the game really well, which made the adaptation enjoyable for fans..</p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="review-actions">
+            <button class="react-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3
+                        7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 
+                        19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span class="react-count">0</span>
+            </button>
+
+            <button class="share-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77l-7.13-4.2a3.471 3.471 0 000-1.3l7.1-4.18c.53.5
+                        1.23.82 2.01.82 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .2.03.39.08.57L8.91 8.65a3
+                        3 0 100 6.7l7.12 4.19c-.05.17-.08.36-.08.55 0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3z"/>
+            </svg>
+            <span class="share-count">0</span>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="review-card">
+      <a class="review-header" onclick="openProfile('member3')">
+        <img src="images/member3.jpg" class="review-profile">
+        <h3>Cascade</h3>
+       </a> 
+        <p class="review-summary">Iron Lung is a wonderful movie. If you played the game or know that game iron lung then you know what movie is about. Markiplier did well producing the movie and all.</p>
+        <p class="review-full hidden">*Iron Lung* is a science-fiction horror film about a prisoner sent on a dangerous mission in a small submarine to explore an ocean of blood on a distant moon. The movie creates suspense through its dark atmosphere, eerie sounds, and mysterious story rather than relying on jump scares. Mark Fischbach delivers a convincing performance that adds to the tension. Overall, it is a unique and unsettling horror film that is worth watching for fans of science fiction and psychological suspense.</p>
+        <p class="review-full hidden" style="text-align: center;">“𝘉𝘦 𝘺𝘰𝘶𝘳𝘴𝘦𝘭𝘧; 𝘦𝘷𝘦𝘳𝘺𝘰𝘯𝘦 𝘦𝘭𝘴𝘦 𝘪𝘴 𝘢𝘭𝘳𝘦𝘢𝘥𝘺 𝘵𝘢𝘬𝘦𝘯.” – Oscar Wilde</p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="review-actions">
+            <button class="react-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3
+                        7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 
+                        19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span class="react-count">0</span>
+            </button>
+
+            <button class="share-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77l-7.13-4.2a3.471 3.471 0 000-1.3l7.1-4.18c.53.5
+                        1.23.82 2.01.82 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .2.03.39.08.57L8.91 8.65a3
+                        3 0 100 6.7l7.12 4.19c-.05.17-.08.36-.08.55 0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3z"/>
+            </svg>
+            <span class="share-count">0</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="review-card">
+        <a class="review-header" onclick="openProfile('member4')">
+        <img src="images/member4.png" class="review-profile">
+        <h3>Bjay</h3>
+        </a>
+        <p class="review-summary">This scene captures the heart of me, i really like this movie its so great.</p>
+        <p class="review-full hidden"> I am really into science fiction movies, so this one immediately caught my attention. I also love movies that involve apocalyptic events, which made it even more appealing to me. Overall, I would rate the movie a 9/10. I love how the characters and the plot work together to create an engaging and suspenseful story.</p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="review-actions">
+            <button class="react-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3
+                        7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 
+                        19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span class="react-count">0</span>
+            </button>
+
+            <button class="share-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77l-7.13-4.2a3.471 3.471 0 000-1.3l7.1-4.18c.53.5
+                        1.23.82 2.01.82 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .2.03.39.08.57L8.91 8.65a3
+                        3 0 100 6.7l7.12 4.19c-.05.17-.08.36-.08.55 0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3z"/>
+            </svg>
+            <span class="share-count">0</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="review-card">
+        <a class="review-header" onclick="openProfile('member5')">
+        <img src="images/member5.jpg" class="review-profile">
+        <h3>El Payaso</h3>
+        </a>
+        <p class="review-summary">this movie is such an amazing and full of hidden plots and unexpected scenes.</p>
+        <p class="review-full hidden">At first, I wasn't interested in the movie because I thought it was just another normal sci-fi horror film and not that interesting. It just so happened that my cousin was watching it, so I started watching it with her. As the movie went on, it became more interesting, especially with the mystery surrounding the story. Now, I really like the movie and highly recommend it to everyone. It's definitely a must-watch.
+.</p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="review-actions">
+            <button class="react-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3
+                        7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 
+                        19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span class="react-count">0</span>
+            </button>
+
+            <button class="share-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77l-7.13-4.2a3.471 3.471 0 000-1.3l7.1-4.18c.53.5
+                        1.23.82 2.01.82 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .2.03.39.08.57L8.91 8.65a3
+                        3 0 100 6.7l7.12 4.19c-.05.17-.08.36-.08.55 0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3z"/>
+            </svg>
+            <span class="share-count">0</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="review-card">
+        <a class="review-header" onclick="openProfile('member6')">
+        <img src="images/member6.jpg" class="review-profile">
+        <h3>Maestro</h3>
+        </a>
+        <p class="review-summary">It is a timeless Filipino film that blends powerful acting, gender themes, and emotional storytelling into one unforgettable experience.</p>
+        <p class="review-full hidden">Iron Lung is such a cool and creepy movie title. I like it because it immediately makes you curious, as it sounds mysterious and unsettling at the same time. Even before watching the movie, the title gives off a tense and claustrophobic vibe that fits the horror atmosphere really well.</p>
+        <p class="review-full hidden" style="text-align: center;">MABUHAY PHILIPPINES FOR HAVING SUCH A GREAT MOVIE!!</p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="review-actions">
+            <button class="react-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3
+                        7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 
+                        19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span class="react-count">0</span>
+            </button>
+
+            <button class="share-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77l-7.13-4.2a3.471 3.471 0 000-1.3l7.1-4.18c.53.5
+                        1.23.82 2.01.82 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .2.03.39.08.57L8.91 8.65a3
+                        3 0 100 6.7l7.12 4.19c-.05.17-.08.36-.08.55 0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3z"/>
+            </svg>
+            <span class="share-count">0</span>
+            </button>
+        </div>
+    </div>
+
+</section>
+
+<!-- ABOUT US SECTION -->
+<section class="about-section scroll-effect" id="about">
+    <h2>About Our Group</h2>
+    <p>
+        This website is made for our school project. It aims to review and discuss the 
+        film <em>Iron Lung</em> and the ideas it presents. All videos, images, and 
+        references used here belong to their rightful owners. No copyright infringement 
+        intended.
+    </p>
+
+    <div class="members-grid">
+        <!-- 12 Members -->
+        <div class="member-card" id="member1" onclick="openProfile('member1')">
+            <img src="images/member1.jpg" alt="Member 1" class="member-profile">
+            <h3>Dolontap, Charles G.</h3>
+            <p>LEADER & Developer</p>
+            <p>"Some people come into your life like fate, and others leave like a lesson."</p>
+        </div>
+        <div class="member-card" id="member2" onclick="openProfile('member2')">
+            <img src="images/member2.jpg" alt="Member 2" class="member-profile">
+            <h3>Pasaylo-on, Johnfred Wayne R.</h3>
+            <p>Designer</p>
+            <p>"I’d rather walk alone than drown in noise."</p>
+        </div>
+        <div class="member-card" id="member3" onclick="openProfile('member3')">
+            <img src="images/member3.jpg" alt="Member 3" class="member-profile">
+            <h3>Lopez, Lloyd Edrik D.</h3>
+            <p>Researcher</p>
+            <p>"Eat first, think later."</p>
+        </div>
+        <div class="member-card" id="member4" onclick="openProfile('member4')">
+            <img src="images/member4.png" alt="Member 4" class="member-profile">
+            <h3>Andes, Bobby Clark Jay S.</h3>
+            <p>Researcher</p>
+            <p>"Lost? Nah, just walking in the wrong direction."</p>
+        </div>
+        <div class="member-card" id="member5" onclick="openProfile('member5')">
+            <img src="images/member5.jpg" alt="Member 5" class="member-profile">
+            <h3>Manarang, John Lester Z.</h3>
+            <p>Content Manager</p>
+            <p>"Bebetaym."</p>
+        </div>
+        <div class="member-card" id="member6" onclick="openProfile('member6')">
+            <img src="images/member6.jpg" alt="Member 6" class="member-profile">
+            <h3>Marcos, John Clinton Boss C.</h3>
+            <p>Researcher</p>
+            <p>"A silent plea, for what's meant to be."</p>
+        </div>
+    </div>
+</section>
+
+<!-- ✅ REFERENCES SECTION -->
+<section id="references" class="references-section scroll-effect">
+    <h2>References</h2>
+    <ul>
+    <li>IMDb. (n.d.). <em>Iron Lung</em>. Retrieved June 2026, from 
+        <a href="https://www.imdb.com/title/tt27564844/" target="_blank">https://www.imdb.com/title/tt27564844/</a>
+    </li>
+
+    <li>Wikipedia. (n.d.). <em>Iron Lung</em>. Retrieved June 2026, from 
+        <a href="https://en.wikipedia.org/wiki/Iron_Lung_(film)" target="_blank">https://en.wikipedia.org/wiki/Iron_Lung_(film)</a>
+    </li>
+
+    <li>Wikipedia. (n.d.). <em>Markiplier</em>. Retrieved June 2026, from 
+        <a href="https://en.wikipedia.org/wiki/Markiplier" target="_blank">https://en.wikipedia.org/wiki/Markiplier</a>
+    </li>
+
+    <li>Wikipedia. (n.d.). <em>Troy Baker</em>. Retrieved June 2026, from 
+        <a href="https://en.wikipedia.org/wiki/Troy_Baker" target="_blank">https://en.wikipedia.org/wiki/Troy_Baker</a>
+    </li>
+
+    <li>Wikipedia. (n.d.). <em>Caroline Kaplan</em>. Retrieved June 2026, from 
+        <a href="https://en.wikipedia.org/wiki/Caroline_Kaplan" target="_blank">https://en.wikipedia.org/wiki/Caroline_Kaplan</a>
+    </li>
+
+    <li>Rotten Tomatoes. (n.d.). <em>Iron Lung</em>. Retrieved June 2026, from 
+        <a href="https://www.rottentomatoes.com/m/iron_lung" target="_blank">https://www.rottentomatoes.com/m/iron_lung</a>
+    </li>
+
+    <li>Letterboxd. (n.d.). <em>Iron Lung – Reviews</em>. Retrieved June 2026, from 
+        <a href="https://letterboxd.com/film/iron-lung/" target="_blank">https://letterboxd.com/film/iron-lung/</a>
+    </li>
+</ul>
+
+</section>
+
+<!-- MEMBER PROFILE POPUP -->
+<div id="profileModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modal-img" class="modal-img">
+      <h2 id="modal-name"></h2>
+      <p id="modal-role"></p>
+      <p id="modal-quote"></p>
+  </div>
+</div>
+
+<!-- ✅ JS SCRIPTS -->
+<script src="script.js"></script>
+
+<script>
+    function openProfile(memberId) {
+        const card = document.getElementById(memberId);
+
+        document.getElementById("modal-img").src = card.querySelector("img").src;
+        document.getElementById("modal-name").textContent = card.querySelector("h3").textContent;
+
+        const role = card.querySelectorAll("p")[0].textContent;
+        const quote = card.querySelectorAll("p")[1].textContent;
+
+        document.getElementById("modal-role").textContent = role;
+        document.getElementById("modal-quote").textContent = quote;
+
+        document.getElementById("profileModal").style.display = "flex";
+    }
+
+    // Close modal
+    document.querySelector(".close").addEventListener("click", () => {
+        document.getElementById("profileModal").style.display = "none";
+    });
+
+    document.querySelectorAll('.member-card').forEach(card => {
+        card.addEventListener('click', () => {
+            openProfile(card.id);
+        });
+    });
+</script>
+
+</body>
+</html>
